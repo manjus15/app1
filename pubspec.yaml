@@ -1,0 +1,29 @@
+name: banking_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.4 <4.0.0'  # Changed to include a range for better compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter
+  logging: ^1.2.0  # Moved to correct indentation level
+  flutter_secure_storage: ^8.0.0
+  local_auth: ^2.1.6
+  crypto: ^3.0.3
+  image_picker: ^1.0.4
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/  # Added trailing slash to ensure directory is included
